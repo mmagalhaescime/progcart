@@ -17,7 +17,7 @@ if __name__ == "__main__":
     # Linhas e poligonos serão representados por arrays de Nx2.
     linha = np.array([[0,0], [1,0], [1,1]])
     # Linhas e poligonos serão representados por arrays de Nx2 e a última linha é igual a primeira.
-    poligono = np.array([[0,0], [1,0], [1,1], [0,1]])
+    poligono = np.array([[0,0], [1,0], [1,1], [0,1], [0,0]])
     
     print(comprimento(ponto))
     print(comprimento(linha))
