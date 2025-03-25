@@ -24,14 +24,16 @@ Abra o arquivo **launch.json** e remova a parte "path_mappings", deixando apenas
             }
         }
     ]
-}```
-Acione o plugin no QGIS no menu "Plugins -> Enable Debug for Visual Studio"
-Adicione um ponto de parado no seu código.
-Faça qualquer operação no plugin que passe pelo ponto de parada que você colocou.
+}
+```
+
+Acione o plugin no QGIS no menu "Plugins -> Enable Debug for Visual Studio"  
+Adicione um ponto de parado no seu código.  
+Faça qualquer operação no plugin que passe pelo ponto de parada que você colocou.  
 
 Dúvidas: https://code.visualstudio.com/docs/python/debugging
 
-Mais informações sobre o plugin podem ser obtidas em:
+Mais informações sobre o plugin podem ser obtidas em:  
 https://github.com/lmotta/debug_vs_plugin/wiki
 
 
