@@ -18,7 +18,7 @@ from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg
 class ApplicationWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super(ApplicationWindow, self).__init__() # Call the inherited classes __init__ method
-        uic.loadUi('src/plot.ui', self) # Load the .ui file
+        uic.loadUi('plot.ui', self) # Load the .ui file
         
         #this is a canvas object from MatPlotLib for PyQt
         self.static_canvas = FigureCanvas(Figure(figsize=(5, 3)))
@@ -31,7 +31,9 @@ class ApplicationWindow(QtWidgets.QMainWindow):
         #CHANGE HERE: Change this according to your problem
         self._static_ax = self.static_canvas.figure.subplots()
         t = np.linspace(0, 10, 501)
-        self._static_ax.plot(t, np.tan(t), ".")
+        m = np.random.rand(128,128)
+        #self._static_ax.plot(t, np.tan(t), ".")
+        self._static_ax.imshow(m)
 
 if __name__ == "__main__":
     qapp = QtWidgets.QApplication.instance()
